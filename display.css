@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(17, 17, 17);
+}
+.search{
+    display: block;
+    background-color: rgb(17, 17, 17);
+    border: none;
+}
+.video{
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.video-preview{
+    margin-bottom: 10px;
+}
+.thumbnail{
+    width: 100%;
+}
+.info{
+    width: 300px;
+    display: inline-block;
+}
+.about{
+    width: 200px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.profile{
+    width: 45px;
+    display: inline-block;
+    vertical-align: top;
+}
+.profile1{
+    width:100%;
+    border-radius: 50%;
+}
+.title{
+    display: inline-block;
+    width: 240px;
+    line-height: 25px;
+    margin-top: 0%;
+    font-family:Roboto, Helvetica, sans-serif;
+    font-weight: 500;
+    color:white
+}
+.author,.stats{
+    margin-top: 0;
+    font-family: Roboto,Arial;
+    line-height: 10px;
+    font-size: 15px;
+    color: rgba(202, 191, 191, 0.651);
+}
+
+  
