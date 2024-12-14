@@ -198,3 +198,22 @@ padding-bottom: 5px;
     padding: 8px;
     margin-top: 10px;
 }
+.topbar{
+    /* height:100px; */
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+}
+#bar1{
+width: 100px;
+background-color: lightblue;
+}
+#bar2{
+    display: flex;
+    flex:1;
+background-color: lightpink;
+}
+#bar3{
+    background-color: lightblue;
+    flex:2;
+}
