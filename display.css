@@ -1,8 +1,10 @@
 body{
     /* background-color: rgb(17, 17, 17); */
-    background-color: rgb(255, 255, 255);
+    background-color:whitesmoke;
     height: 150vh;
     padding: 20px;
+    padding-top:80px;
+    padding-left: 99px; 
     overflow-x: hidden;
 }
 
@@ -11,6 +13,21 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 40px;
+}
+@media(max-width:700px){
+    #row1{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:700px)and(max-width:999px){
+    #row1{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(min-width:1000px){
+    #row1{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 .video-preview{
     margin-bottom: 10px;
@@ -28,6 +45,9 @@ body{
 .profile1{
     width:100%;
     border-radius: 50%;
+}
+a{
+    text-decoration: none;
 }
 .title{
     line-height: 25px;
@@ -47,100 +67,128 @@ body{
 
 .topbar{
     display: flex;
-    width: 100%;
-    padding-bottom: 20px;
+    flex: 1;
     justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0px 1px 1px rgb(243, 213, 213);
+    left: 0;
+    right: 0;
+    top: 0;
+    height:63px ;
+    padding-left: 25px;
 }
 .hamburger-menu{
     width: 28px;
 }
 .youtube-logo{
     height: 22px;
-    margin-left: 25px;
+    margin-left: 28px;
 }
 
 .left-bar{
     display: flex;
     align-items: center;
-    width: 200px;
+    /* width: 200px; */
 }
 
 .middle-bar{
     display: flex;
+    width: 510px;
     align-items: center;
-    border-radius: 3px;
-    height: 45px;
-    padding-left: 30px;
-}
-.search-group{
-    display: flex;
-    align-items: center;
-    height: 45px;
-    border: 2px solid rgba(170, 166, 166, 0.678) ;
-    border-radius: 3px;
-    margin-right:10px ;
+    margin-left: 68px;
+    margin-right: 30px;
+    /* background-color: blueviolet; */
 }
 .search{
-    /* background-color: rgb(17, 17, 17); */
-    border: none;
-    font-size: 18px;
     padding-left: 15px;
-    height: 45px;
-    outline-width: 0px;
-    outline-color:blueviolet ;
-    border-radius: 3px;
-    /* width: 20px; */
+    height: 38px;
+    width: 0;
+    flex:1;
+    border: solid 1px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    border-color: rgb(192,192,192);
+    font-size: 18px;
+    box-shadow:inset 1px 2px 3px rgba(0, 0,0,0.05);
+}
+.search-button{
+    height: 42px;
+    width: 70px;
+    margin-left: -2px;
+    border:solid 1px;
+    border-color: rgb(192, 192, 192);
+    background-color: aliceblue;
+    margin-right: 10px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 .search-icon{
-    border-left: rgba(170, 166, 166, 0.678) 2px ridge;
-    width: 30px;
+    width: 26px;
+}
+.voice-button{
     height: 45px;
-    padding-left:20px;
-    padding-right:20px;
-    background-color: rgb(221, 215, 215);
+    width: 45px;
+    border-radius: 50%;
+    border: none;
 }
 .voice-icon{
-    width: 30px;
-}
-.voice-group{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    background-color: rgb(221, 215, 215);
-    border-radius: 50px;
-    /* margin-right: 40px; */
+    width: 26px;
 }
 .right-bar{
     display: flex;
     justify-content: flex-end;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
-    margin-left: 35px;
-    margin-right: 5px;
+    width: 201px;
+    margin-right: 28px;
+    flex-shrink: 0;
+    /* margin-left: 30px; */
 }
 .upload-icon{
     width: 27px;
 }
 .app-icon,.noti-icon{
     width:27px;
-    margin-left: 30px;
 }
 .profile-icon{
     width:35px;
-    margin-left: 30px;
     height: 35px;
     border-radius: 50px;
 }
-.leftbar{
+.side-bar{
  display:flex;
- height:100px;
- flex-direction:column;
- justify-content: flex-start;
- /* grid-template-columns: 5px 5px  ; */
+ align-items:center;
+ position: fixed;
+ top: 63px;
+ left:0;
+ bottom: 0;
+ width: 80px;
+ flex-direction: column;
+ row-gap: 12px;
+ background-color:white;
+
 }
 .explore-icon,.home-icon,.subscriptions-icon,.originals-icon,.music-icon,.library-icon{
-    width: 30px;
+    height: 27px;
+}
+.home{
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.explore,.subs,.original,.music,.library{
+width: 80px;
+height: 70px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.text{
+    font-size: 12px;
+    font-family: Roboto,Arial, Helvetica, sans-serif ;
+    margin-top: 8px;
 }
